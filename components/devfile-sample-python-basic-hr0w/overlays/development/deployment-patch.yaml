@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-hr0w
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-zobt-tenant/appstudio/devfile-sample-python-basic-hr0w@sha256:9e51e8366dec0aa92cd12465548a47473103b5481a1bc9f3006060907a0a4bd3
+        name: my-python
+        resources: {}
+status: {}
